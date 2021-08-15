@@ -198,14 +198,14 @@ $EndComp
 $Comp
 L power:+5V #PWR01
 U 1 1 60D52A47
-P 1025 6800
+P 1025 7000
 AR Path="/6114D32E/60D52A47" Ref="#PWR01"  Part="1" 
 AR Path="/6247A5CE/60D52A47" Ref="#PWR?"  Part="1" 
-F 0 "#PWR01" H 1025 6650 50  0001 C CNN
-F 1 "+5V" H 1040 6973 50  0000 C CNN
-F 2 "" H 1025 6800 50  0001 C CNN
-F 3 "" H 1025 6800 50  0001 C CNN
-	1    1025 6800
+F 0 "#PWR01" H 1025 6850 50  0001 C CNN
+F 1 "+5V" H 1040 7173 50  0000 C CNN
+F 2 "" H 1025 7000 50  0001 C CNN
+F 3 "" H 1025 7000 50  0001 C CNN
+	1    1025 7000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -228,30 +228,6 @@ Wire Wire Line
 Wire Wire Line
 	1825 7300 1775 7300
 $Comp
-L Device:R R1
-U 1 1 60D52A56
-P 875 7100
-AR Path="/6114D32E/60D52A56" Ref="R1"  Part="1" 
-AR Path="/6247A5CE/60D52A56" Ref="R?"  Part="1" 
-F 0 "R1" V 775 7100 50  0000 C CNN
-F 1 "1K" V 875 7100 50  0000 C CNN
-F 2 "resistor_smd:R_0603_1608Metric" V 805 7100 50  0001 C CNN
-F 3 "~" H 875 7100 50  0001 C CNN
-	1    875  7100
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	1025 6800 1025 6900
-Wire Wire Line
-	1075 7300 875  7300
-Wire Wire Line
-	875  6950 875  6900
-Wire Wire Line
-	875  6900 1025 6900
-Connection ~ 1025 6900
-Wire Wire Line
-	1025 6900 1025 7100
-$Comp
 L power:+3.3V #PWR04
 U 1 1 60D52A62
 P 1825 7025
@@ -268,8 +244,6 @@ Wire Wire Line
 	1775 7100 1825 7100
 Wire Wire Line
 	1825 7100 1825 7025
-Wire Wire Line
-	875  7250 875  7300
 Wire Wire Line
 	4725 3125 4725 3175
 Wire Wire Line
@@ -304,10 +278,6 @@ Wire Wire Line
 	5525 2525 5625 2525
 Wire Wire Line
 	5525 2325 5625 2325
-Text GLabel 5625 2525 2    50   Output ~ 0
-USBD_N
-Text GLabel 5625 2325 2    50   Output ~ 0
-USBD_P
 $Comp
 L Device:R R7
 U 1 1 60D529C1
@@ -557,30 +527,16 @@ Wire Wire Line
 Wire Wire Line
 	1625 3225 1625 3325
 Connection ~ 1625 3325
-Wire Wire Line
-	3975 2325 4200 2325
-Wire Wire Line
-	4200 2325 4200 2625
-Wire Wire Line
-	4200 2625 4475 2625
 Connection ~ 3975 2325
-Connection ~ 4475 2625
-Wire Wire Line
-	3850 2525 4325 2525
-Wire Wire Line
-	4325 2525 4325 2325
-Wire Wire Line
-	4325 2325 4475 2325
-Connection ~ 3850 2525
 Connection ~ 4475 2325
 Wire Wire Line
 	4950 2325 5225 2325
 Wire Wire Line
 	4950 2525 5225 2525
 Text Label 5100 2325 0    50   ~ 0
-D+
-Text Label 5100 2525 0    50   ~ 0
 D-
+Text Label 5100 2525 0    50   ~ 0
+D+
 $Comp
 L Device:Ferrite_Bead FB3
 U 1 1 60DECA32
@@ -702,4 +658,21 @@ Wire Notes Line
 	2750 7625 700  7625
 Wire Notes Line
 	700  7625 700  6125
+Wire Wire Line
+	3850 2525 4475 2525
+Connection ~ 3850 2525
+Connection ~ 4475 2525
+Wire Wire Line
+	3975 2325 4475 2325
+Wire Wire Line
+	1075 7300 1025 7300
+Wire Wire Line
+	1025 7300 1025 7100
+Wire Wire Line
+	1025 7000 1025 7100
+Connection ~ 1025 7100
+Text GLabel 5625 2325 2    50   BiDi ~ 0
+USB_D0-
+Text GLabel 5625 2525 2    50   BiDi ~ 0
+USB_D0+
 $EndSCHEMATC

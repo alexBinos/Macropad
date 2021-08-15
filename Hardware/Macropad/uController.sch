@@ -67,24 +67,18 @@ Wire Wire Line
 Connection ~ 5000 6250
 Wire Wire Line
 	5000 6250 5000 6300
-Text GLabel 5950 5500 2    50   Input ~ 0
+Text GLabel 5950 4500 2    50   Input ~ 0
 ROW[0]
-Text GLabel 5950 5600 2    50   Input ~ 0
+Text GLabel 5950 4600 2    50   Input ~ 0
 ROW[1]
-Text GLabel 5950 5700 2    50   Input ~ 0
+Text GLabel 5950 4400 2    50   Input ~ 0
 ROW[2]
-Text GLabel 5950 5400 2    50   Output ~ 0
-COL[1]
-Text GLabel 5950 5300 2    50   Output ~ 0
-COL[2]
 Wire Wire Line
-	5600 5700 5950 5700
+	5600 4400 5950 4400
 Wire Wire Line
-	5600 5500 5950 5500
+	5600 4500 5950 4500
 Wire Wire Line
-	5600 5300 5950 5300
-Wire Wire Line
-	5600 5400 5950 5400
+	5600 4100 5950 4100
 $Comp
 L Device:C C?
 U 1 1 60D6926F
@@ -139,37 +133,17 @@ Wire Wire Line
 	4200 2900 4400 2900
 Wire Wire Line
 	4200 2525 4200 2450
-Text GLabel 5950 3400 2    50   Input ~ 0
-ROT_ENC_A
-Text GLabel 5950 3500 2    50   Input ~ 0
-ROT_ENC_B
 Wire Wire Line
-	5600 3400 5950 3400
+	5600 3800 5950 3800
 Wire Wire Line
-	5600 3500 5950 3500
+	5600 3900 5950 3900
 Text Notes 750  1000 0    197  ~ 0
 uController
 NoConn ~ 4400 3300
-$Comp
-L Device:R R?
-U 1 1 60D6928E
-P 2775 3050
-AR Path="/60D6928E" Ref="R?"  Part="1" 
-AR Path="/60D44BDB/60D6928E" Ref="R?"  Part="1" 
-AR Path="/62022D96/60D6928E" Ref="R17"  Part="1" 
-F 0 "R17" V 2700 3050 50  0000 C CNN
-F 1 "4K7" V 2775 3050 50  0000 C CNN
-F 2 "resistor_smd:R_0603_1608Metric" V 2705 3050 50  0001 C CNN
-F 3 "~" H 2775 3050 50  0001 C CNN
-	1    2775 3050
-	1    0    0    1   
-$EndComp
 Wire Wire Line
 	2950 3100 2950 3050
 Wire Wire Line
 	3675 3300 3675 3250
-Wire Wire Line
-	2775 2850 2775 2900
 Wire Wire Line
 	3650 3100 4400 3100
 Text GLabel 8575 4200 2    50   Input ~ 0
@@ -257,10 +231,8 @@ Text Notes 7300 3750 0    50   ~ 0
 Config
 Wire Notes Line
 	7250 3650 8875 3650
-Text GLabel 5950 5100 2    50   Output ~ 0
-COL[0]
 Wire Wire Line
-	5600 5600 5950 5600
+	5600 4600 5950 4600
 $Comp
 L power:VBUS #PWR?
 U 1 1 60D692D1
@@ -275,30 +247,12 @@ F 3 "" H 4250 3625 50  0001 C CNN
 	1    4250 3625
 	1    0    0    -1  
 $EndComp
-NoConn ~ 5600 3300
-NoConn ~ 5600 4500
-NoConn ~ 5600 4600
-NoConn ~ 5600 4700
 Wire Wire Line
 	8400 4400 8400 4300
 Wire Wire Line
 	4400 3500 4250 3500
 Wire Wire Line
 	4250 3400 4250 3500
-$Comp
-L power:+3.3V #PWR?
-U 1 1 60D692E9
-P 2775 2850
-AR Path="/60D692E9" Ref="#PWR?"  Part="1" 
-AR Path="/60D44BDB/60D692E9" Ref="#PWR?"  Part="1" 
-AR Path="/62022D96/60D692E9" Ref="#PWR0149"  Part="1" 
-F 0 "#PWR0149" H 2775 2700 50  0001 C CNN
-F 1 "+3.3V" H 2790 3023 50  0000 C CNN
-F 2 "" H 2775 2850 50  0001 C CNN
-F 3 "" H 2775 2850 50  0001 C CNN
-	1    2775 2850
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:+3.3V #PWR?
 U 1 1 60D692EF
@@ -661,13 +615,7 @@ $EndComp
 Wire Wire Line
 	3650 3250 3675 3250
 Wire Wire Line
-	2775 3200 2775 3250
-Wire Wire Line
-	2775 3250 3000 3250
-Wire Wire Line
 	3000 3100 2950 3100
-Wire Wire Line
-	5950 5100 5600 5100
 $Comp
 L Switch:SW_Push SW22
 U 1 1 60E5A3E5
@@ -706,14 +654,14 @@ Wire Notes Line
 	7250 5075 8875 5075
 Wire Notes Line
 	8875 5075 8875 3650
-Text GLabel 5950 3800 2    50   Input ~ 0
+Text GLabel 5950 4200 2    50   Input ~ 0
 ROW[4]
 Wire Wire Line
-	5950 3800 5600 3800
-Text GLabel 5950 4100 2    50   Output ~ 0
+	5950 4200 5600 4200
+Text GLabel 5950 5400 2    50   Output ~ 0
 RGB_OUT
 Wire Wire Line
-	5950 4100 5600 4100
+	5950 5400 5600 5400
 Text Notes 2750 2525 0    50   ~ 0
 16MHz Crystal
 Text Notes 7850 4825 0    50   ~ 0
@@ -734,10 +682,10 @@ Wire Notes Line
 	8950 6000 8950 4850
 Wire Notes Line
 	10125 6000 8950 6000
-Text GLabel 5950 5800 2    50   Input ~ 0
+Text GLabel 5950 4300 2    50   Input ~ 0
 ROW[3]
 Wire Wire Line
-	5600 5800 5950 5800
+	5600 4300 5950 4300
 $Comp
 L Device:R R?
 U 1 1 6202A8FB
@@ -772,22 +720,20 @@ Wire Wire Line
 	6000 5000 6450 5000
 Wire Wire Line
 	6450 5000 6450 5075
-Text GLabel 5950 3900 2    50   Input ~ 0
+Text GLabel 5950 4800 2    50   Input ~ 0
 ROW[5]
 Wire Wire Line
-	5950 3900 5600 3900
-Text GLabel 5950 4800 2    50   Output ~ 0
-COL[3]
-Wire Wire Line
 	5950 4800 5600 4800
-Text GLabel 5950 4200 2    50   BiDi ~ 0
+Wire Wire Line
+	5950 3300 5600 3300
+Text GLabel 5950 5300 2    50   BiDi ~ 0
 SDA
 Wire Wire Line
-	5950 4200 5600 4200
-Text GLabel 5950 4300 2    50   BiDi ~ 0
+	5950 5300 5600 5300
+Text GLabel 5950 5100 2    50   BiDi ~ 0
 SCL
 Wire Wire Line
-	5950 4300 5600 4300
+	5950 5100 5600 5100
 $Comp
 L Device:R R?
 U 1 1 62040703
@@ -862,10 +808,31 @@ Wire Wire Line
 	3925 3900 4400 3900
 Wire Wire Line
 	3925 4000 4400 4000
-Text GLabel 3925 3900 0    50   BiDi ~ 0
-DP1_P
-Text GLabel 3925 4000 0    50   BiDi ~ 0
-DM1_N
 Text GLabel 8000 3250 2    50   BiDi ~ 0
 SDA
+Wire Wire Line
+	3000 3250 2950 3250
+Wire Wire Line
+	2950 3250 2950 3100
+Connection ~ 2950 3100
+Wire Wire Line
+	5600 3600 5950 3600
+Text GLabel 5950 4100 2    50   Output ~ 0
+COL[2]
+Wire Wire Line
+	5950 2900 5600 2900
+Text GLabel 5950 2900 2    50   Output ~ 0
+COL[0]
+Text GLabel 5950 3600 2    50   Output ~ 0
+COL[1]
+Text GLabel 5950 3900 2    50   Input ~ 0
+ROT_ENC_B
+Text GLabel 5950 3800 2    50   Input ~ 0
+ROT_ENC_A
+Text GLabel 5950 3300 2    50   Output ~ 0
+COL[3]
+Text GLabel 3925 3900 0    50   BiDi ~ 0
+USB_D4+
+Text GLabel 3925 4000 0    50   BiDi ~ 0
+USB_D4-
 $EndSCHEMATC
