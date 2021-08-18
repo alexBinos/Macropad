@@ -46,14 +46,14 @@ Wire Wire Line
 $Comp
 L power:GND #PWR08
 U 1 1 60D529D7
-P 2775 3375
+P 2775 3825
 AR Path="/6114D32E/60D529D7" Ref="#PWR08"  Part="1" 
 AR Path="/6247A5CE/60D529D7" Ref="#PWR?"  Part="1" 
-F 0 "#PWR08" H 2775 3125 50  0001 C CNN
-F 1 "GND" H 2780 3202 50  0000 C CNN
-F 2 "" H 2775 3375 50  0001 C CNN
-F 3 "" H 2775 3375 50  0001 C CNN
-	1    2775 3375
+F 0 "#PWR08" H 2775 3575 50  0001 C CNN
+F 1 "GND" H 2780 3652 50  0000 C CNN
+F 2 "" H 2775 3825 50  0001 C CNN
+F 3 "" H 2775 3825 50  0001 C CNN
+	1    2775 3825
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -101,8 +101,6 @@ Wire Wire Line
 Connection ~ 2350 3325
 Wire Wire Line
 	2700 3325 2775 3325
-Wire Wire Line
-	2775 3325 2775 3375
 Wire Wire Line
 	2950 1775 3025 1775
 Wire Wire Line
@@ -376,15 +374,8 @@ Wire Wire Line
 Wire Wire Line
 	3050 2525 3850 2525
 Wire Wire Line
-	3975 2325 3975 3575
-Wire Wire Line
-	3975 3575 4225 3575
-Wire Wire Line
-	4225 3775 3850 3775
-Wire Wire Line
-	3850 3775 3850 2525
+	3975 2325 3975 2850
 NoConn ~ 5225 3575
-NoConn ~ 5225 3775
 Wire Wire Line
 	3875 1475 3875 1425
 Wire Wire Line
@@ -540,14 +531,14 @@ D+
 $Comp
 L Device:Ferrite_Bead FB3
 U 1 1 60DECA32
-P 3350 1525
+P 2525 3700
 AR Path="/6114D32E/60DECA32" Ref="FB3"  Part="1" 
 AR Path="/6247A5CE/60DECA32" Ref="FB?"  Part="1" 
-F 0 "FB3" V 3100 1425 50  0000 C CNN
-F 1 "Ferrite_Bead" V 3175 1450 50  0000 C CNN
-F 2 "Inductor_SMD:L_0805_2012Metric" V 3280 1525 50  0001 C CNN
-F 3 "~" H 3350 1525 50  0001 C CNN
-	1    3350 1525
+F 0 "FB3" V 2700 3700 50  0000 C CNN
+F 1 "Ferrite_Bead" V 2475 3100 50  0000 C CNN
+F 2 "Inductor_SMD:L_0805_2012Metric" V 2455 3700 50  0001 C CNN
+F 3 "~" H 2525 3700 50  0001 C CNN
+	1    2525 3700
 	0    1    1    0   
 $EndComp
 Wire Wire Line
@@ -565,7 +556,7 @@ Wire Wire Line
 Wire Wire Line
 	1625 3325 2050 3325
 Wire Wire Line
-	2050 3325 2350 3325
+	2050 3325 2300 3325
 Connection ~ 2050 3325
 Wire Wire Line
 	2050 3275 2050 3325
@@ -675,4 +666,29 @@ Text GLabel 5625 2325 2    50   BiDi ~ 0
 USB_D0-
 Text GLabel 5625 2525 2    50   BiDi ~ 0
 USB_D0+
+Wire Wire Line
+	3975 2850 5375 2850
+Wire Wire Line
+	5375 2850 5375 3775
+Wire Wire Line
+	5375 3775 5225 3775
+Wire Wire Line
+	4225 3575 3850 3575
+Wire Wire Line
+	3850 3575 3850 2525
+NoConn ~ 4225 3775
+Wire Wire Line
+	2375 3700 2300 3700
+Wire Wire Line
+	2300 3700 2300 3325
+Connection ~ 2300 3325
+Wire Wire Line
+	2300 3325 2350 3325
+Wire Wire Line
+	2775 3325 2775 3700
+Wire Wire Line
+	2675 3700 2775 3700
+Connection ~ 2775 3700
+Wire Wire Line
+	2775 3700 2775 3825
 $EndSCHEMATC

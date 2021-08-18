@@ -516,19 +516,6 @@ Wire Wire Line
 	9150 5550 9675 5550
 Connection ~ 9675 5550
 $Comp
-L Power_Protection:SRV05-4 U?
-U 1 1 61242165
-P 7300 3700
-AR Path="/6114D32E/61242165" Ref="U?"  Part="1" 
-AR Path="/6247A5CE/61242165" Ref="U7"  Part="1" 
-F 0 "U7" H 7050 4175 50  0000 C CNN
-F 1 "SRV05-4" H 7525 4225 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-6" H 8000 3250 50  0001 C CNN
-F 3 "http://www.onsemi.com/pub/Collateral/SRV05-4-D.PDF" H 7300 3700 50  0001 C CNN
-	1    7300 3700
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR?
 U 1 1 612486D5
 P 7300 2275
@@ -545,21 +532,6 @@ Wire Wire Line
 	7300 2275 7300 2200
 $Comp
 L power:GND #PWR?
-U 1 1 6124D41E
-P 7300 4275
-AR Path="/6114D32E/6124D41E" Ref="#PWR?"  Part="1" 
-AR Path="/6247A5CE/6124D41E" Ref="#PWR0198"  Part="1" 
-F 0 "#PWR0198" H 7300 4025 50  0001 C CNN
-F 1 "GND" H 7305 4102 50  0000 C CNN
-F 2 "" H 7300 4275 50  0001 C CNN
-F 3 "" H 7300 4275 50  0001 C CNN
-	1    7300 4275
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7300 4275 7300 4200
-$Comp
-L power:GND #PWR?
 U 1 1 61250FCD
 P 7300 6250
 AR Path="/6114D32E/61250FCD" Ref="#PWR?"  Part="1" 
@@ -574,13 +546,11 @@ $EndComp
 Wire Wire Line
 	7300 6250 7300 6175
 Wire Wire Line
+	6800 1600 6650 1600
+Wire Wire Line
+	7800 1800 7950 1800
+Wire Wire Line
 	7800 1600 7950 1600
-Wire Wire Line
-	6800 1800 6650 1800
-Wire Wire Line
-	7800 3600 7950 3600
-Wire Wire Line
-	6800 3800 6650 3800
 Wire Wire Line
 	7800 5575 7950 5575
 Wire Wire Line
@@ -749,13 +719,11 @@ Text GLabel 9150 5550 0    50   BiDi ~ 0
 USB_D3+
 Text GLabel 9150 5350 0    50   BiDi ~ 0
 USB_D3-
-Text GLabel 6650 1800 0    50   BiDi ~ 0
+Text GLabel 7950 1800 2    50   BiDi ~ 0
 USB_D1+
-Text GLabel 7950 1600 2    50   BiDi ~ 0
+Text GLabel 6650 1600 0    50   BiDi ~ 0
 USB_D1-
-Text GLabel 6650 3800 0    50   BiDi ~ 0
-USB_D2+
-Text GLabel 7950 3600 2    50   BiDi ~ 0
+Text GLabel 7950 1600 2    50   BiDi ~ 0
 USB_D2-
 Text GLabel 6650 5775 0    50   BiDi ~ 0
 USB_D3+
@@ -776,10 +744,6 @@ F 3 "http://www.onsemi.com/pub/Collateral/SRV05-4-D.PDF" H 7300 5675 50  0001 C 
 $EndComp
 NoConn ~ 7800 5775
 NoConn ~ 6800 5575
-NoConn ~ 7800 3800
-NoConn ~ 6800 3600
-NoConn ~ 6800 1600
-NoConn ~ 7800 1800
 Wire Wire Line
 	3850 4425 4025 4425
 Wire Wire Line
@@ -816,22 +780,6 @@ F 1 "+5V" H 7315 1123 50  0000 C CNN
 F 2 "" H 7300 950 50  0001 C CNN
 F 3 "" H 7300 950 50  0001 C CNN
 	1    7300 950 
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR?
-U 1 1 61FE5DA5
-P 7300 2950
-AR Path="/61FE5DA5" Ref="#PWR?"  Part="1" 
-AR Path="/60D44BDB/61FE5DA5" Ref="#PWR?"  Part="1" 
-AR Path="/60D99CF5/61FE5DA5" Ref="#PWR?"  Part="1" 
-AR Path="/6114D32E/61FE5DA5" Ref="#PWR?"  Part="1" 
-AR Path="/6247A5CE/61FE5DA5" Ref="#PWR023"  Part="1" 
-F 0 "#PWR023" H 7300 2800 50  0001 C CNN
-F 1 "+5V" H 7315 3123 50  0000 C CNN
-F 2 "" H 7300 2950 50  0001 C CNN
-F 3 "" H 7300 2950 50  0001 C CNN
-	1    7300 2950
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -912,8 +860,6 @@ Wire Wire Line
 	9700 4850 9750 4850
 Wire Wire Line
 	7300 4925 7300 5175
-Wire Wire Line
-	7300 2950 7300 3200
 Wire Wire Line
 	7300 950  7300 1200
 $Comp
@@ -1166,4 +1112,8 @@ F 3 "~" H 4300 2125 50  0001 C CNN
 	1    4300 2125
 	0    1    1    0   
 $EndComp
+Wire Wire Line
+	6800 1800 6650 1800
+Text GLabel 6650 1800 0    50   BiDi ~ 0
+USB_D2+
 $EndSCHEMATC

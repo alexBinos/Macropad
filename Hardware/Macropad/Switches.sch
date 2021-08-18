@@ -837,13 +837,13 @@ $EndComp
 $Comp
 L Device:D D22
 U 1 1 61C4D1B7
-P 9000 2100
-F 0 "D22" V 9046 2020 50  0000 R CNN
-F 1 "D" V 8955 2020 50  0000 R CNN
-F 2 "custom_footprint_library:SOD323_HS" H 9000 2100 50  0001 C CNN
-F 3 "~" H 9000 2100 50  0001 C CNN
-	1    9000 2100
-	0    1    -1   0   
+P 8800 1625
+F 0 "D22" V 8846 1545 50  0000 R CNN
+F 1 "D" V 8755 1545 50  0000 R CNN
+F 2 "custom_footprint_library:SOD323_HS" H 8800 1625 50  0001 C CNN
+F 3 "~" H 8800 1625 50  0001 C CNN
+	1    8800 1625
+	1    0    0    1   
 $EndComp
 $Comp
 L Device:D D18
@@ -878,23 +878,8 @@ Wire Wire Line
 	4825 4950 4825 6100
 Wire Wire Line
 	2575 4950 2575 6100
-Text GLabel 8325 1825 0    50   Output ~ 0
+Text GLabel 8475 1625 0    50   Output ~ 0
 ROW[5]
-Wire Wire Line
-	9075 1825 8325 1825
-Wire Wire Line
-	9075 1625 9000 1625
-Wire Wire Line
-	9000 1625 9000 1950
-Text GLabel 9000 2425 3    50   Output ~ 0
-ENCODER
-Wire Wire Line
-	9000 2425 9000 2250
-Text GLabel 4275 1075 1    50   Input ~ 0
-ENCODER
-Wire Wire Line
-	4275 1075 4275 1500
-Connection ~ 4275 1500
 Wire Wire Line
 	9675 1625 10150 1625
 Connection ~ 10150 1625
@@ -1084,4 +1069,12 @@ Text Notes 8525 4475 0    50   ~ 0
 Mounting holes
 Text Notes 8075 975  0    50   ~ 0
 Rotary encoder
+Text GLabel 8900 1825 0    50   Input ~ 0
+COL[3]
+Wire Wire Line
+	8475 1625 8650 1625
+Wire Wire Line
+	8950 1625 9075 1625
+Wire Wire Line
+	8900 1825 9075 1825
 $EndSCHEMATC
