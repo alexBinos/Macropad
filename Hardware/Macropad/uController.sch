@@ -67,16 +67,16 @@ Wire Wire Line
 Connection ~ 5000 6250
 Wire Wire Line
 	5000 6250 5000 6300
-Text GLabel 5950 4500 2    50   Input ~ 0
+Text GLabel 5950 4200 2    50   Input ~ 0
 ROW[0]
-Text GLabel 5950 4600 2    50   Input ~ 0
+Text GLabel 5950 4300 2    50   Input ~ 0
 ROW[1]
 Text GLabel 5950 4400 2    50   Input ~ 0
 ROW[2]
 Wire Wire Line
 	5600 4400 5950 4400
 Wire Wire Line
-	5600 4500 5950 4500
+	5600 4200 5950 4200
 Wire Wire Line
 	5600 4100 5950 4100
 $Comp
@@ -232,7 +232,7 @@ Config
 Wire Notes Line
 	7250 3650 8875 3650
 Wire Wire Line
-	5600 4600 5950 4600
+	5600 4300 5950 4300
 $Comp
 L power:VBUS #PWR?
 U 1 1 60D692D1
@@ -654,10 +654,10 @@ Wire Notes Line
 	7250 5075 8875 5075
 Wire Notes Line
 	8875 5075 8875 3650
-Text GLabel 5950 4200 2    50   Input ~ 0
+Text GLabel 5950 4500 2    50   Input ~ 0
 ROW[4]
 Wire Wire Line
-	5950 4200 5600 4200
+	5950 4500 5600 4500
 Text GLabel 5950 5400 2    50   Output ~ 0
 RGB_OUT
 Wire Wire Line
@@ -682,10 +682,6 @@ Wire Notes Line
 	8950 6000 8950 4850
 Wire Notes Line
 	10125 6000 8950 6000
-Text GLabel 5950 4300 2    50   Input ~ 0
-ROW[3]
-Wire Wire Line
-	5600 4300 5950 4300
 $Comp
 L Device:R R?
 U 1 1 6202A8FB
@@ -835,4 +831,8 @@ Text GLabel 3925 3900 0    50   BiDi ~ 0
 USB_D4+
 Text GLabel 3925 4000 0    50   BiDi ~ 0
 USB_D4-
+Wire Wire Line
+	5600 4600 5950 4600
+Text GLabel 5950 4600 2    50   Input ~ 0
+ROW[3]
 $EndSCHEMATC
