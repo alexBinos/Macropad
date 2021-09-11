@@ -43,4 +43,6 @@ U 6247A5CE
 F0 "USB_HUB" 118
 F1 "USB_HUB.sch" 50
 $EndSheet
+Text Notes 750  1000 0    315  ~ 0
+Macropad
 $EndSCHEMATC

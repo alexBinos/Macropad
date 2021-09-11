@@ -255,19 +255,6 @@ F 3 "" H 5825 5675 50  0001 C CNN
 	1    5825 5675
 	1    0    0    -1  
 $EndComp
-$Comp
-L Power_Protection:SRV05-4 U2
-U 1 1 60D529F9
-P 5825 5125
-AR Path="/6114D32E/60D529F9" Ref="U2"  Part="1" 
-AR Path="/6247A5CE/60D529F9" Ref="U?"  Part="1" 
-F 0 "U2" H 5575 5600 50  0000 C CNN
-F 1 "SRV05-4" H 6050 5650 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-6" H 6525 4675 50  0001 C CNN
-F 3 "http://www.onsemi.com/pub/Collateral/SRV05-4-D.PDF" H 5825 5125 50  0001 C CNN
-	1    5825 5125
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6625 3975 6725 3975
 Wire Wire Line
@@ -782,4 +769,17 @@ Wire Notes Line
 	7375 6050 2000 6050
 Wire Notes Line
 	2000 6050 2000 2500
+$Comp
+L Power_Protection:SRV05-4 U2
+U 1 1 60D529F9
+P 5825 5125
+AR Path="/6114D32E/60D529F9" Ref="U2"  Part="1" 
+AR Path="/6247A5CE/60D529F9" Ref="U?"  Part="1" 
+F 0 "U2" H 5575 5600 50  0000 C CNN
+F 1 "SRV05-4" H 6050 5650 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 6525 4675 50  0001 C CNN
+F 3 "http://www.onsemi.com/pub/Collateral/SRV05-4-D.PDF" H 5825 5125 50  0001 C CNN
+	1    5825 5125
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
