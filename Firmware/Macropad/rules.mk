@@ -3,10 +3,11 @@ MCU = atmega32u4
 BOOTLOADER = atmel-dfu
 
 # Build Options
+CUSTOM_MATRIX = lite
 BOOTMAGIC_ENABLE = lite     # Virtual DIP switch configuration
 MOUSEKEY_ENABLE = yes       # Mouse keys
 EXTRAKEY_ENABLE = yes       # Audio control and System control
-CONSOLE_ENABLE = no         # Console for debug
+CONSOLE_ENABLE = yes         # Console for debug
 COMMAND_ENABLE = no         # Commands for debug and configuration
 # Do not enable SLEEP_LED_ENABLE. it uses the same timer as BACKLIGHT_ENABLE
 SLEEP_LED_ENABLE = no       # Breathing sleep LED during USB suspend
@@ -18,3 +19,5 @@ UNICODE_ENABLE = no         # Unicode
 BLUETOOTH_ENABLE = no       # Enable Bluetooth
 AUDIO_ENABLE = no           # Audio output
 ENCODER_ENABLE = no        # Rotary Encoder support
+
+SRC += matrix.c
