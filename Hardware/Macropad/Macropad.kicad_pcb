@@ -416,6 +416,11 @@
       (net 55 RST))
     (pad 2 smd rect (at 2.17932 -0.04572 180) (size 0.9 1.7) (layers B.Cu B.Paste B.Mask)
       (net 3 GND))
+    (model ${KISYS3DMOD}/Button_Switch_SMD.3dshapes/SW_SPST_B3U-1000P.step
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module custom_footprint_library:SK6812-MINI-E locked (layer F.Cu) (tedit 611E001C) (tstamp 611C27F2)
