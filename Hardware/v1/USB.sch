@@ -255,10 +255,6 @@ F 3 "" H 5825 5675 50  0001 C CNN
 	1    5825 5675
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6625 3975 6725 3975
-Wire Wire Line
-	6625 3775 6725 3775
 $Comp
 L Device:R R7
 U 1 1 60D529C1
@@ -285,71 +281,6 @@ F 3 "~" H 6475 3975 50  0001 C CNN
 	1    6475 3975
 	0    1    -1   0   
 $EndComp
-$Comp
-L Device:L_Core_Iron_Coupled_1423 L1
-U 1 1 60DDC17D
-P 5800 3875
-AR Path="/6114D32E/60DDC17D" Ref="L1"  Part="1" 
-AR Path="/6247A5CE/60DDC17D" Ref="L?"  Part="1" 
-F 0 "L1" H 5525 3875 50  0000 C CNN
-F 1 "L_Core_Iron_Coupled_1423" H 6500 4175 50  0000 C CNN
-F 2 "custom_footprint_library:SMM2012E" H 5800 3875 50  0001 C CNN
-F 3 "~" H 5800 3875 50  0001 C CNN
-	1    5800 3875
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	6000 3775 6050 3775
-$Comp
-L Device:R R6
-U 1 1 60DDF643
-P 5800 4075
-AR Path="/6114D32E/60DDF643" Ref="R6"  Part="1" 
-AR Path="/6247A5CE/60DDF643" Ref="R?"  Part="1" 
-F 0 "R6" V 5725 4075 50  0000 C CNN
-F 1 "OPT" V 5800 4075 50  0000 C CNN
-F 2 "resistor_smd:R_0603_1608Metric" V 5730 4075 50  0001 C CNN
-F 3 "~" H 5800 4075 50  0001 C CNN
-	1    5800 4075
-	0    1    -1   0   
-$EndComp
-$Comp
-L Device:R R5
-U 1 1 60DDFB5E
-P 5800 3650
-AR Path="/6114D32E/60DDFB5E" Ref="R5"  Part="1" 
-AR Path="/6247A5CE/60DDFB5E" Ref="R?"  Part="1" 
-F 0 "R5" V 5900 3650 50  0000 C CNN
-F 1 "OPT" V 5800 3650 50  0000 C CNN
-F 2 "resistor_smd:R_0603_1608Metric" V 5730 3650 50  0001 C CNN
-F 3 "~" H 5800 3650 50  0001 C CNN
-	1    5800 3650
-	0    1    -1   0   
-$EndComp
-Wire Wire Line
-	5650 4075 5575 4075
-Wire Wire Line
-	5575 4075 5575 3975
-Wire Wire Line
-	5575 3975 5600 3975
-Wire Wire Line
-	6000 3975 6050 3975
-Wire Wire Line
-	5950 4075 6050 4075
-Wire Wire Line
-	6050 4075 6050 3975
-Connection ~ 6050 3975
-Wire Wire Line
-	6050 3775 6050 3650
-Wire Wire Line
-	6050 3650 5950 3650
-Connection ~ 6050 3775
-Wire Wire Line
-	5650 3650 5575 3650
-Wire Wire Line
-	5575 3650 5575 3775
-Wire Wire Line
-	5575 3775 5600 3775
 Text Notes 7450 4775 0    50   ~ 0
 5V to 3V3 LDO\n200mA
 Wire Wire Line
@@ -502,11 +433,6 @@ Wire Wire Line
 	2725 4675 2725 4775
 Connection ~ 2725 4775
 Connection ~ 5075 3775
-Connection ~ 5575 3775
-Wire Wire Line
-	6050 3775 6325 3775
-Wire Wire Line
-	6050 3975 6325 3975
 Text Label 6200 3775 0    50   ~ 0
 D-
 Text Label 6200 3975 0    50   ~ 0
@@ -610,12 +536,7 @@ Wire Wire Line
 	9625 5000 9625 5050
 Wire Wire Line
 	9625 5350 9625 5400
-Wire Wire Line
-	4950 3975 5575 3975
 Connection ~ 4950 3975
-Connection ~ 5575 3975
-Wire Wire Line
-	5075 3775 5575 3775
 Wire Wire Line
 	8000 5600 7950 5600
 Wire Wire Line
@@ -623,9 +544,9 @@ Wire Wire Line
 Wire Wire Line
 	7950 5300 7950 5400
 Connection ~ 7950 5400
-Text GLabel 6725 3775 2    50   BiDi ~ 0
+Text GLabel 6850 3775 2    50   BiDi ~ 0
 USB_D0-
-Text GLabel 6725 3975 2    50   BiDi ~ 0
+Text GLabel 6850 3975 2    50   BiDi ~ 0
 USB_D0+
 Wire Wire Line
 	5075 4300 6475 4300
@@ -782,4 +703,65 @@ F 3 "http://www.onsemi.com/pub/Collateral/SRV05-4-D.PDF" H 5825 5125 50  0001 C 
 	1    5825 5125
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	6625 3775 6850 3775
+Wire Wire Line
+	6625 3975 6700 3975
+$Comp
+L Device:R R?
+U 1 1 628B5244
+P 6700 3550
+AR Path="/6114D32E/628B5244" Ref="R?"  Part="1" 
+AR Path="/6247A5CE/628B5244" Ref="R?"  Part="1" 
+F 0 "R?" V 6625 3550 50  0000 C CNN
+F 1 "1K5" V 6700 3550 50  0000 C CNN
+F 2 "resistor_smd:R_0603_1608Metric" V 6630 3550 50  0001 C CNN
+F 3 "~" H 6700 3550 50  0001 C CNN
+	1    6700 3550
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 3700 6700 3975
+Connection ~ 6700 3975
+Wire Wire Line
+	6700 3975 6850 3975
+$Comp
+L power:+3.3V #PWR?
+U 1 1 628B7D92
+P 6700 3350
+AR Path="/628B7D92" Ref="#PWR?"  Part="1" 
+AR Path="/60D44BDB/628B7D92" Ref="#PWR?"  Part="1" 
+AR Path="/60D99CF5/628B7D92" Ref="#PWR?"  Part="1" 
+AR Path="/6114D32E/628B7D92" Ref="#PWR?"  Part="1" 
+AR Path="/6247A5CE/628B7D92" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6700 3200 50  0001 C CNN
+F 1 "+3.3V" H 6715 3523 50  0000 C CNN
+F 2 "" H 6700 3350 50  0001 C CNN
+F 3 "" H 6700 3350 50  0001 C CNN
+	1    6700 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 3350 6700 3400
+$Comp
+L Device:L_Core_Iron_Coupled_1423 L1
+U 1 1 60DDC17D
+P 5800 3875
+AR Path="/6114D32E/60DDC17D" Ref="L1"  Part="1" 
+AR Path="/6247A5CE/60DDC17D" Ref="L?"  Part="1" 
+F 0 "L1" H 5525 3875 50  0000 C CNN
+F 1 "L_Core_Iron_Coupled_1423" H 6500 4175 50  0000 C CNN
+F 2 "custom_footprint_library:SMM2012E" H 5800 3875 50  0001 C CNN
+F 3 "~" H 5800 3875 50  0001 C CNN
+	1    5800 3875
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 3975 5600 3975
+Wire Wire Line
+	6000 3975 6325 3975
+Wire Wire Line
+	5075 3775 5600 3775
+Wire Wire Line
+	6000 3775 6325 3775
 $EndSCHEMATC

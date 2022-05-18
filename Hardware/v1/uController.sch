@@ -67,7 +67,7 @@ Wire Wire Line
 Connection ~ 4975 5975
 Wire Wire Line
 	4975 5975 4975 6025
-Text GLabel 5925 3925 2    50   Input ~ 0
+Text GLabel 5925 5025 2    50   Input ~ 0
 ROW[0]
 Text GLabel 5925 4025 2    50   Input ~ 0
 ROW[1]
@@ -710,11 +710,11 @@ Wire Wire Line
 	5925 4525 5575 4525
 Wire Wire Line
 	5925 3025 5575 3025
-Text GLabel 5925 5025 2    50   BiDi ~ 0
+Text GLabel 5925 3925 2    50   BiDi ~ 0
 SDA
 Wire Wire Line
 	5925 5025 5575 5025
-Text GLabel 5925 4825 2    50   BiDi ~ 0
+Text GLabel 5925 3825 2    50   BiDi ~ 0
 SCL
 Wire Wire Line
 	5925 4825 5575 4825
@@ -729,7 +729,7 @@ Wire Wire Line
 Connection ~ 2925 2825
 Wire Wire Line
 	5575 3325 5925 3325
-Text GLabel 5925 3825 2    50   Output ~ 0
+Text GLabel 5925 4825 2    50   Output ~ 0
 COL[2]
 Wire Wire Line
 	5925 2625 5575 2625
