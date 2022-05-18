@@ -27,3 +27,5 @@ fp-info-cache
 # Solidworks
 *.SLDPRT
 *.SLDASM
+
+*.zip
