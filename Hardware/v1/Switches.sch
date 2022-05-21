@@ -977,19 +977,6 @@ F 3 "~" H 8200 2750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR028
-U 1 1 6208B069
-P 8200 2925
-F 0 "#PWR028" H 8200 2675 50  0001 C CNN
-F 1 "GND" H 8205 2752 50  0000 C CNN
-F 2 "" H 8200 2925 50  0001 C CNN
-F 3 "" H 8200 2925 50  0001 C CNN
-	1    8200 2925
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8200 2925 8200 2850
-$Comp
 L Mechanical:MountingHole_Pad H3
 U 1 1 62091ED9
 P 9225 2750
@@ -1000,19 +987,6 @@ F 3 "~" H 9225 2750 50  0001 C CNN
 	1    9225 2750
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR030
-U 1 1 62091EDF
-P 9225 2925
-F 0 "#PWR030" H 9225 2675 50  0001 C CNN
-F 1 "GND" H 9230 2752 50  0000 C CNN
-F 2 "" H 9225 2925 50  0001 C CNN
-F 3 "" H 9225 2925 50  0001 C CNN
-	1    9225 2925
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9225 2925 9225 2850
 $Comp
 L Mechanical:MountingHole_Pad H2
 U 1 1 62098D7F
@@ -1025,19 +999,6 @@ F 3 "~" H 8200 3400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR029
-U 1 1 62098D85
-P 8200 3575
-F 0 "#PWR029" H 8200 3325 50  0001 C CNN
-F 1 "GND" H 8205 3402 50  0000 C CNN
-F 2 "" H 8200 3575 50  0001 C CNN
-F 3 "" H 8200 3575 50  0001 C CNN
-	1    8200 3575
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8200 3575 8200 3500
-$Comp
 L Mechanical:MountingHole_Pad H4
 U 1 1 62098D8C
 P 9225 3400
@@ -1048,19 +1009,6 @@ F 3 "~" H 9225 3400 50  0001 C CNN
 	1    9225 3400
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR031
-U 1 1 62098D92
-P 9225 3575
-F 0 "#PWR031" H 9225 3325 50  0001 C CNN
-F 1 "GND" H 9230 3402 50  0000 C CNN
-F 2 "" H 9225 3575 50  0001 C CNN
-F 3 "" H 9225 3575 50  0001 C CNN
-	1    9225 3575
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9225 3575 9225 3500
 Text Notes 8075 2425 0    50   ~ 0
 Mounting holes
 Text Notes 8075 950  0    50   ~ 0
@@ -1175,4 +1123,8 @@ Wire Notes Line
 	8000 825  8000 2275
 Wire Notes Line
 	6300 825  6300 2275
+NoConn ~ 8200 2850
+NoConn ~ 9225 2850
+NoConn ~ 9225 3500
+NoConn ~ 8200 3500
 $EndSCHEMATC
