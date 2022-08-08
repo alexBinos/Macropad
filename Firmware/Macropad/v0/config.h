@@ -11,7 +11,7 @@
 
 /* Switch matrix dimensions */
 #define MATRIX_ROWS 6
-#define MATRIX_COLS 4
+#define MATRIX_COLS 16
 
 /* Micro controller pins */
 #define MATRIX_ROW_PINS { D1, D2, D3, D5, D4, D7}
@@ -28,6 +28,11 @@
 #define RGBLIGHT_SAT_STEP 8
 #define RGBLIGHT_VAL_STEP 8
 #define RGBLIGHT_LIMIT_VAL 128      // Half brightness to save power
-#define RGBLIGHT_DEFAULT_HUE 85     // Green in HSV
-#define RGBLIGHT_DEFAULT_MODE RGBLIGHT_MODE_RGB_TEST
+#define RGBLIGHT_DEFAULT_MODE RGBLIGHT_MODE_STATIC_LIGHT
 #define RGBLIGHT_ANIMATIONS         // For more options see: https://beta.docs.qmk.fm/using-qmk/hardware-features/lighting/feature_rgblight
+
+/* OLED Display */
+
+#define OLED_DISPLAY_ADDRESS 0x78
+#define OLED_IC OLED_IC_SSD1306
+#define OLED_DISPLAY_128X64 true

@@ -10,14 +10,15 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_C, KC_D, KC_E, KC_F
   ),
   
-  [1] = LAYOUT(
-    _______,
-    _______, KC_SCOLON, KC_QUOT, _______,
-    _______,   RGB_TOG, KC_LBRACKET , KC_RBRACKET,
-    RGB_MOD,   RGB_M_T,   RGB_RMOD, _______,
-    _______,   RGB_HUD,   RGB_HUI, _______,
-    RESET, _______, _______, _______
-  ),
+  //  [1] = LAYOUT(
+  //   _______,
+  //   _______, KC_SCOLON, KC_QUOT, _______,
+  //   RGB_HUD, RGB_HUI, KC_LBRACKET, KC_RBRACKET,
+  //   RGB_SAD, RGB_SAI, RGB_TOG, RGB_M_P,
+  //   RGB_VAD, RGB_VAI, RGB_MOD, RGB_RMOD,
+  //   RESET, _______, _______, _______
+    
+  // ),
 };
 
 /*

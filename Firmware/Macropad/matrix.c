@@ -1,38 +1,32 @@
 #include <quantum.h>
 #include <debounce.h>
 #include <wait.h>
-//#include "util.h"
 
 static const pin_t row_pins[MATRIX_ROWS] = MATRIX_ROW_PINS;
 static const pin_t col_pins[MATRIX_COLS] = MATRIX_COL_PINS;
 extern matrix_row_t raw_matrix[MATRIX_ROWS];  // raw values
 extern matrix_row_t matrix[MATRIX_ROWS];      // debounced values
 
-static inline void setPinOutput_writeLow(pin_t pin) {
-    ATOMIC_BLOCK_FORCEON {
-        setPinOutput(pin);
-        writePinLow(pin);
-    }
+// 1. Removed static inline atomic function definitions
+
+
+static void select_row(uint8_t row) { 
+   setPinOutput(row_pins[row]);
+   writePinLow(row_pins[row]);
 }
 
-static inline void setPinInputHigh_atomic(pin_t pin) {
-    ATOMIC_BLOCK_FORCEON { setPinInputHigh(pin); }
-}
-
-static void select_row(uint8_t row) { setPinOutput_writeLow(row_pins[row]); }
-
-static void unselect_row(uint8_t row) { setPinInputHigh_atomic(row_pins[row]); }
+static void unselect_row(uint8_t row) { setPinInputHigh(row_pins[row]); }
 
 static void unselect_rows(void) {
     for (uint8_t x = 0; x < MATRIX_ROWS; x++) {
-        setPinInputHigh_atomic(row_pins[x]);
+        setPinInputHigh(row_pins[x]);
     }
 }
 
 static void init_pins(void) {
     unselect_rows();
     for (uint8_t x = 0; x < MATRIX_COLS; x++) {
-        setPinInputHigh_atomic(col_pins[x]);
+        setPinInputHigh(col_pins[x]);
     }
 }
 
