@@ -16,4 +16,15 @@ Pull up/down resistors are required to be placed on the USB data lines to set th
 <br>
 To use the USB HUB, the 1K5 resistor can be soldered between R1 and R8. The 15K pull down resistors can be soldered between USB data lines and ground at the downstream connectors.
 <br>
+ 
+<p align="center" width="100%">
+    <img width="60%" src="usb_fix.jpg"> 
+</p>
+
+<br>
 If the USB HUB is not required, the TUSB2046 can not be placed and the USB data lines can be connected directly to the ATMEGA32U4 by joining pins 1 and 24, and pins 2 and 23 on the TUSB2046 footprint with wire.
+<br>
+
+<p align="center" width="100%">
+    <img width="60%" src="usb_bypass.jpg"> 
+</p>
